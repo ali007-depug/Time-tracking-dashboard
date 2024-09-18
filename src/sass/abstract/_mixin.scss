@@ -1,0 +1,11 @@
+$breakpoint-up: (
+  "sm": 525px,
+  "md": 768px,
+  "lg": 992px,
+);
+
+@mixin breakpoint-up($point){
+    @media (min-width:(map-get($breakpoint-up,$point))){
+        @content;
+    }
+}

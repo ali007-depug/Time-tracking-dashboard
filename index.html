@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+<!-- googl fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300...900&display=swap">
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main role="main">
+  <div class="dashboard">
+    <!-- user card -->
+    <div class="dashboard__user">
+      <div class="dashboard__userDetails">
+        <img src="./images/image-jeremy.png" alt="image-jeremy" class="dashboard__userImage">
+        <div class="dashboard__userTitle">
+         <span> Report for</span>
+        <h3 class="dashboard__userName">
+          Jeremy Robson
+        </h3>
+        </div>
+      </div>
+      <div class="dashboard__option">
+        <ul>
+          <li class="daily">Daily</li>
+        </ul>
+        <ul>
+          <li class="weekly active">Weekly</li>
+        </ul>
+        <ul>
+          <li class="monthly">Monthly</li>
+        </ul>
+      </div>
+    </div>
+    <!-- end user card -->
+    <!-- card container -->
+    <div class="dashboard__cardsWrapper">
+      <!-- work card -->
+      <div class="dashboard__card ">
+        <!-- watermark -->
+        <div class="dashboard__waterMark w">
+          <img src="./images/icon-work.svg" alt="icon-work">
+        </div>
+        <!-- card Info -->
+        <div class="dashboard__cardInfo">
+          <!-- card title and ellpsis -->
+          <div class="dashboard__cardTitle">
+            <h4>work</h4>
+            <span class="options">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <!-- where the json data must show -->
+          <div class="dashboard__jsonDataWrapper">
+          <h3 class="dashboard__jsonData"></h3>
+          <span class="dashboard__jsonPrev"></span>
+          </div>
+        </div>
+      </div>
+      <!-- play card -->
+      <div class="dashboard__card ">
+        <div class="dashboard__waterMark p">
+          <img src="./images/icon-play.svg" alt="icon-play">
+        </div>
+        <div class="dashboard__cardInfo">
+          <div class="dashboard__cardTitle">
+            <h4>play</h4>
+            <span class="options">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <!-- where the json data must show -->
+                    <div class="dashboard__jsonDataWrapper">
+                      <h3 class="dashboard__jsonData"></h3>
+                      <span class="dashboard__jsonPrev"></span>
+                    </div>
+
+        </div>
+      </div>
+
+      <!-- study card -->
+      <div class="dashboard__card ">
+        <div class="dashboard__waterMark st">
+          <img src="./images/icon-study.svg" alt="icon-study">
+        </div>
+        <div class="dashboard__cardInfo">
+          <div class="dashboard__cardTitle">
+            <h4>study</h4>
+            <span class="options">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <!-- where the json data must show -->
+                    <div class="dashboard__jsonDataWrapper">
+                      <h3 class="dashboard__jsonData"></h3>
+                      <span class="dashboard__jsonPrev"></span>
+                    </div>
+
+        </div>
+      </div>
+
+      <!-- exercise card -->
+      <div class="dashboard__card ">
+        <div class="dashboard__waterMark ex">
+          <img src="./images/icon-exercise.svg" alt="icon-exercise">
+        </div>
+        <div class="dashboard__cardInfo">
+          <div class="dashboard__cardTitle">
+            <h4>exercise</h4>
+            <span class="options">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <!-- where the json data must show -->
+                    <div class="dashboard__jsonDataWrapper">
+                      <h3 class="dashboard__jsonData"></h3>
+                      <span class="dashboard__jsonPrev"></span>
+                    </div>
+
+        </div>
+      </div>
+
+      <!-- social card -->
+      <div class="dashboard__card ">
+        <div class="dashboard__waterMark so">
+          <img src="./images/icon-social.svg" alt="icon-social">
+        </div>
+        <div class="dashboard__cardInfo">
+          <div class="dashboard__cardTitle">
+            <h4>social</h4>
+            <span class="options">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <!-- where the json data must show -->
+                    <div class="dashboard__jsonDataWrapper">
+                      <h3 class="dashboard__jsonData"></h3>
+                      <span class="dashboard__jsonPrev"></span>
+                    </div>
+
+        </div>
+      </div>
+
+      <!-- selfcare card -->
+      <div class="dashboard__card ">
+        <div class="dashboard__waterMark sc">
+          <img src="./images/icon-self-care.svg" alt="icon-self-care.svg">
+        </div>
+        <div class="dashboard__cardInfo">
+          <div class="dashboard__cardTitle">
+            <h4>self care</h4>
+            <span class="options">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <!-- where the json data must show -->
+                    <div class="dashboard__jsonDataWrapper">
+                      <h3 class="dashboard__jsonData"></h3>
+                      <span class="dashboard__jsonPrev"></span>
+                    </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="attribution" role="contentinfo">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/ali-abdelbagi-02313b223">Ali AbdElbagi</a>
+    </main>
+  <script src="./src/app.js"></script>
+</body>
+
+</html>

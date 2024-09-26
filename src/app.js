@@ -12,7 +12,10 @@ async function fetchedData() {
   try {
     const response = await fetch("../data.json");
     if (!response.ok) {
-      throw new Error('Network response was not ok: ' + response.statusText);
+      const errorText = await response.text(); // Get the error text for debugging
+      throw new Error(
+        `Network response was not ok: ${response.status} - ${errorText}`
+      );
     }
   
     // console.log(response)

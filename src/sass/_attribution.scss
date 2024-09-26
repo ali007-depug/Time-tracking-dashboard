@@ -1,0 +1,18 @@
+@use "./abstract/" as *;
+.attribution{
+    font-size: rem(11);
+    margin-inline:auto ;
+    text-align: center;
+    color: $play-c;
+
+    @include breakpoint-up(md){
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    a{
+        color: $study-c;
+        text-decoration: none;
+    }
+}

@@ -10,7 +10,6 @@ async function fetchedData() {
   // using try
   const response = await fetch("data.json");
   const data = await response.json();
-  showDefaultData(data);
 
   // when click on daily button
   dailyBtn.addEventListener("click", (e) => {
@@ -27,6 +26,9 @@ async function fetchedData() {
     handleFetchedData(data, "Monthly");
     handelActive(monthlyBtn, weeklyBtn, dailyBtn);
   });
+
+  showDefaultData(data);
+
 }
 
 fetchedData();

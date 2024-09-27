@@ -8,10 +8,9 @@ const monthlyBtn = document.querySelector(".monthly");
 // function to fetch data from json
 async function fetchedData() {
   // using try
-  const response = await fetch("../data.json");
+  const response = await fetch("./data.json");
   const data = await response.json();
-
-  showDefaultData(data);
+  // showDefaultData(data);
 
   // when click on daily button
   dailyBtn.addEventListener("click", (e) => {
